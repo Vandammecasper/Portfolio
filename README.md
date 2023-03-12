@@ -15,12 +15,16 @@ If you just downloaded this repository.
     ```shell
     npm install
     ```
-4) And run the project
+4) Install react-router-dom
+    ```shell
+    npm install react-router-dom
+    ```
+5) And run the project
     ```shell
     npm run dev
     ```
 
-If you already installed npm.
+If you already installed everything before and you just want te run the project.
 1) Open the terminal
 2) Go into the map Portfolio
     ```shell
