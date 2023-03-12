@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './index.css'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./assets/styles/screen.scss";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <div className='o-container'>
+      <RouterProvider router={router}/>
+    </div>
   </React.StrictMode>,
 )

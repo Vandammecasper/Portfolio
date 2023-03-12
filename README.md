@@ -19,7 +19,15 @@ If you just downloaded this repository.
     ```shell
     npm install react-router-dom
     ```
-5) And run the project
+5) Install sass
+    ```shell
+    npm install sass
+    ```
+6) Install lucid-react
+    ```shell
+    npm install lucide-react
+    ```
+7) And run the project
     ```shell
     npm run dev
     ```
