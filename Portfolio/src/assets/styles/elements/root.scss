@@ -1,12 +1,12 @@
 :root{
     font-family: 'Roboto', sans-serif;
-    // background-color: #f0f3f4;
-    background-color: #F0F3F4;
+    background-color: var(--theme-color-4);
 
     // --theme-color-1: #bf6037;
     --theme-color-1: #080357;
-    // --theme-color-2: #6e8ca0;
     --theme-color-2: #FF9F1C;
+    --theme-color-3: #16697A;
+    --theme-color-4: #f0f3f4;
 
     --white: #fff;
     --black: #000;

@@ -10,9 +10,9 @@ export default () => {
     <header className="c-header">
       <h1 className='c-header__title'>Messiaen Tibo</h1>
       <ul className="c-header-links">
-        <li className="c-header-links__item c-header-links__item-selected">About me</li>
-        <li className="c-header-links__item">Learning adventure</li>
-        <li className="c-header-links__item">Projects</li>
+        <li className="c-header-links__item c-header-links__item-selected"><Link to={'/about'}>About me</Link></li>
+        <li className="c-header-links__item"><Link to={'/learning'}>Learning adventure</Link></li>
+        <li className="c-header-links__item"><Link to={'/projects'}>Projects</Link></li>
       </ul>
     </header>
   );
