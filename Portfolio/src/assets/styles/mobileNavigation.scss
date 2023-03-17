@@ -1,0 +1,79 @@
+/*
+    Component: mobile nav
+    ---
+    Dedicated mobile nav component
+*/
+
+.c-mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
+    z-index: 1000;
+}
+
+.c-mobile-nav-tile{
+    margin-bottom: 20px;
+}
+
+.has-mobile-nav .c-mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.c-mobile-nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 16px; */
+}
+
+.c-mobile-nav__bg{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: opacity .25s ease, background-color .25s ease;
+}
+
+.has-mobile-nav .c-mobile-nav__bg{
+    background-color: rgb(250, 251, 252);
+    opacity: 0.5;
+}
+
+
+.c-mobile-nav__body {
+    position: relative;
+    padding: 24px;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity .5s ease-in, transform .5s ease-in;
+    background-color: rgb(250, 251, 252);
+}
+
+.has-mobile-nav .c-mobile-nav__body {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .c-mobile-nav__body {
+        padding: 48px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Hide the mobile nav on larger viewports even whent it's open on smaller screens */
+    .c-mobile-nav {
+        display: none !important;
+    }
+}
