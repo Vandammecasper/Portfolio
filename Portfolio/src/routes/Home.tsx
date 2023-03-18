@@ -23,7 +23,7 @@ function Home() {
         discover my learning adventure or have a look at some of my projects
       </p>
 
-      <a href={cv} target="_blank" className='flex place-items-center place-content-center bg-caribbean-current w-fit m-auto text-white rounded mb-16'>
+      <a href={cv} target="_blank" className='flex place-items-center place-content-center bg-caribbean-current w-fit m-auto text-white rounded mb-16 hover:text-orange-peel'>
         <FileDown className='text-2xl m-4'/>
         <p className='m-4 ml-0'>DOWNLOAD MY CV</p></a>
 
@@ -78,7 +78,7 @@ function Home() {
                 title="26/02/2003"
                 subtitle="Birthday"/>
 
-              <Link className='flex place-items-center place-content-center bg-caribbean-current w-fit m-auto text-white rounded' to={'/downloads/cv'}>
+              <Link className='flex place-items-center place-content-center bg-caribbean-current w-fit m-auto rounded text-white hover:text-orange-peel' to={'/downloads/cv'}>
                 <UserPlus className='text-2xl m-4'/>
                 <p className='m-4 ml-0'>DOWNLOAD MY VCARD</p>
               </Link>

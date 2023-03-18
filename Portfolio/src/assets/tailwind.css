@@ -6,6 +6,11 @@ html, body, label {
   font-family: 'Roboto', sans-serif;
 }
 
+::selection {
+  background-color: #16697A40;
+  color: #1a202c;
+}
+
 /* Tailwind */
 @tailwind base;
 @tailwind components;
