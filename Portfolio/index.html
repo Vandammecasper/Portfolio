@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/styles/mobileNavigation.scss" />
     <title>Vite + React + TS</title>
   </head>
   <body class="bg-anti-flash-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <aside class="c-mobile-nav">
+    <div class="c-mobile-nav__body">
+        <div class="c-mobile-nav__header">            
+            <h1 class="c-mobile-nav-tile">
+                Tibo Messiaen
+            </h1>
+            <button class="o-button-reset c-nav-trigger js-toggle-nav" onclick="handleClick()">
+                <svg class="c-nav-trigger__svg h-8 w-8" fill="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                </svg>
+            </button>
+        </div>
+        <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
+            <nav class="c-nav">
+                <ul class="o-list c-nav__list">
+                    <li class="c-nav__item"><a href="../Front-end/index.html" class="c-nav__link">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+  </aside>
+  <script>
+    const handleClick = () => {
+      document.querySelector("body").classList.toggle("has-mobile-nav");
+    }
+  </script>
 </html>

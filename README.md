@@ -23,11 +23,15 @@ If you just downloaded this repository.
     ```shell
     npm install sass
     ```
-6) Install lucid-react
+6) Install tailwindcss
+     ```shell
+    npm install -D tailwindcss postcss autoprefixer >> npx tailwindcss init -p
+    ```
+7) Install lucid-react
     ```shell
     npm install lucide-react
     ```
-7) And run the project
+8) And run the project
     ```shell
     npm run dev
     ```

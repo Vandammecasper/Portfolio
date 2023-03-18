@@ -27,7 +27,7 @@
 
 .c-mobile-nav__header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     /* margin-bottom: 16px; */
 }
@@ -51,7 +51,7 @@
 
 .c-mobile-nav__body {
     position: relative;
-    padding: 24px;
+    padding: 12px;
     height: 100vh;
     width: 100vw;
     transform: translateX(-100%);

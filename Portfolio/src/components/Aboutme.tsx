@@ -14,7 +14,6 @@ export default () => {
         <p className=''>Paragraph 2</p>
         <p className=''>Paragraph 3</p>
         <h2 className=''>Subtitle</h2>
-        <Icon icon={dartIcon}/>
         <img src={placeholder} alt="Image" className=''/>
     </div>
   );

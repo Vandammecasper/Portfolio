@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       spacing: {
         '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+        '192': '48rem',
+        '200': '50rem',
       },
       boxShadow: {
         'header': '0 3px 6px 0 #dadbe0;',

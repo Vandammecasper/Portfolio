@@ -5,7 +5,7 @@ function Learning() {
 
   return (
     <div className="Learning">
-        <Header />
+        <Header title='Tibo Messiaen' target='Learning Adventure'/>
     </div>
   )
 }

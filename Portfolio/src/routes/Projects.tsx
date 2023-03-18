@@ -5,7 +5,7 @@ function Projects() {
 
   return (
     <div className="Projects">
-        <Header />
+        <Header title='Tibo Messiaen' target='Projects'/>
     </div>
   )
 }
