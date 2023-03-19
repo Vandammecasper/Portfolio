@@ -19,7 +19,7 @@ export default ({title,target}:Props) => {
   }
 
   return (
-    <header className="flex place-content-between bg-white px-4 content-center text-center place-items-center h-12 shadow-header xl:px-6 2xl:px-24">
+    <header className="flex place-content-between bg-white px-4 content-center text-center place-items-center h-10 shadow-header xl:h-12 xl:px-6 2xl:px-24">
       <Link to='/'><h1 className='text-2xl font-medium xl:text-3xl'>{title}</h1></Link>
       <div className='hidden sm:flex xl:text-xl'>
         <ul>

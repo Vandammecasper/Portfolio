@@ -6,7 +6,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      margin:{
+        '18' : '4.45rem',
+        '26' : '6.5rem',
+        '2/5': '40%',
+      },
+      borderWidth: {
+        '3': '3px',
+        '4': '4px',
+        '5': '5px',
+        '6': '6px',
+        '7': '7px',
+        '8': '8px',
+      },
       spacing: {
+        '22' : '5.5rem',
         '128': '32rem',
         '144': '36rem',
         '160': '40rem',
@@ -15,6 +29,7 @@ module.exports = {
       },
       boxShadow: {
         'header': '0 3px 6px 0 #dadbe0;',
+        'card': '2px 2px 10px 3px rgba(0,0,0,.13);'
       },
       colors: {
         "anti-flash-white": "#F0F3F4",

@@ -8,6 +8,7 @@ import profileIcon from '../assets/imgs/profileIcon.png'
 import cv from '../assets/pdfs/Tibo_Messiaen_CV.pdf'
 import ContactInfo from '../components/ContactInfo';
 import EducationInfo from '../components/EducationInfo';
+import Title from '../components/Title';
 
 function Home() {
 
@@ -15,7 +16,7 @@ function Home() {
     <div className="Home">
       <Header title='Tibo Messiaen'/>
 
-      <h1 className='text-2xl text-center pt-4 pb-5 font-bold text-caribbean-current xl:text-3xl xl:pt-8 xl:pb-10 2xl:text-4xl 2xl:pt-10 2xl:pb-12 '>Welcome</h1>
+      <Title title="Welcome"/>
 
       <p className='text-center text-sm px-4 pb-4 max-w-lg m-auto xl:text-base xl:max-w-xl xl:pb-6 2xl:text-xl 2xl:max-w-2xl 2xl:pb-8'>
         Welcome to my online portfolio. Below you can find my online Curriculum Vitae.
@@ -28,7 +29,7 @@ function Home() {
         <p className='m-4 ml-0'>DOWNLOAD MY CV</p></a>
 
       <div className='xl:flex xl:mx-24'>
-        <div className='w-full bg-caribbean-current text-center max-w-lg m-auto xl:inline-block xl:h-200 xl:mt-0 xl:mr-6'>
+        <div className='w-full bg-caribbean-current text-center max-w-md m-auto xl:inline-block xl:h-200 xl:mt-0 xl:mr-6'>
             <div className='p-10 text-white border-b border-whtie'>
               <img src={profileIcon} alt="Profile icon" className='rounded-full w-16 h-16 m-auto mb-4'/>
 
