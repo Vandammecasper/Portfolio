@@ -14,7 +14,6 @@ function Home() {
 
   return (
     <div className="Home">
-      <Header title='Tibo Messiaen'/>
 
       <Title title="Welcome"/>
 

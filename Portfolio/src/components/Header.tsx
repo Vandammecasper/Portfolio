@@ -7,10 +7,10 @@ import "../../src/assets/styles/mobileNavigation.scss"
 
 interface Props {
   title: string,
-  target?: string // optional parameter
   }
 
-export default ({title,target}:Props) => {
+export default ({title}:Props) => {
+  const [active, setActive] = useState('Home');
 
   const body = document.querySelector("body");
 
@@ -18,22 +18,38 @@ export default ({title,target}:Props) => {
     if(body) body.classList.toggle("has-mobile-nav");
   }
 
+  const selectHome = () => {
+    setActive('Home');
+  }
+
+  const selectAbout = () => {
+    setActive('About me');
+  }
+
+  const selectLearning = () => {
+    setActive('Learning Adventure');
+  }
+
+  const selectProjects = () => {
+    setActive('Projects');
+  }
+
   return (
     <header className="flex place-content-between bg-white px-4 content-center text-center place-items-center h-10 shadow-header xl:h-12 xl:px-6 2xl:px-24">
-      <Link to='/'><h1 className='text-2xl font-medium xl:text-3xl'>{title}</h1></Link>
+      <Link to='/' onClick={selectHome}><h1 className='text-2xl font-medium xl:text-3xl'>{title}</h1></Link>
       <div className='hidden sm:flex xl:text-xl'>
         <ul>
-          {target === 'About me' ?
+          {active === 'About me' ?
             <li className='inline'><Link className='p-2 border-b-4 border-orange-peel' to='/about'>About me</Link></li> :
-            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/about'>About me</Link></li>}
+            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/about' onClick={selectAbout}>About me</Link></li>}
 
-          {target === 'Learning Adventure' ?
+          {active === 'Learning Adventure' ?
             <li className='inline'><Link className='p-2 border-b-4 border-orange-peel' to='/learning'>Learning Adventure</Link></li> :
-            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/learning'>Learning Adventure</Link></li>}
+            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/learning' onClick={selectLearning}>Learning Adventure</Link></li>}
           
-          {target === 'Projects' ?
+          {active === 'Projects' ?
             <li className='inline'><Link className='p-2 border-b-4 border-orange-peel' to='/projects'>Projects</Link></li> :
-            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/projects'>Projects</Link></li>}
+            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/projects' onClick={selectProjects}>Projects</Link></li>}
 
         </ul>
       </div>

@@ -5,7 +5,6 @@ function Projects() {
 
   return (
     <div className="Projects">
-        <Header title='Tibo Messiaen' target='Projects'/>
     </div>
   )
 }

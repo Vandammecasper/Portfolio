@@ -9,24 +9,30 @@ import Home from './routes/Home';
 import About from './routes/About';
 import Learning from './routes/Learning';
 import Projects from './routes/Projects';
+import Container from './components/Container';
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />,
+    element: <Container />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: 'about',
+        element: <About />
+      },
+      {
+        path: 'learning',
+        element: <Learning />
+      },
+      {
+        path: 'projects',
+        element: <Projects />
+      }
+    ]
   },
-  {
-    path: '/about',
-    element: <About />
-  },
-  {
-    path: '/learning',
-    element: <Learning />
-  },
-  {
-    path: '/projects',
-    element: <Projects />
-  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

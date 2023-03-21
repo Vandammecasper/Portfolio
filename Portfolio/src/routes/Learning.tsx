@@ -8,8 +8,6 @@ function Learning() {
 
   return (
     <div className="Learning">
-        <Header title='Tibo Messiaen' target='Learning Adventure'/>
-
         <Title title="My learning adventure"/>
 
         <div className='max-w-6xl m-auto'>

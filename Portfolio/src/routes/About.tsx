@@ -6,7 +6,6 @@ function About() {
 
   return (
     <div className="About">
-        <Header title='Tibo Messiaen' target='About me'/>
         <Aboutme />
     </div>
   )
