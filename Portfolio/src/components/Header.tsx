@@ -3,8 +3,6 @@ import { Home, User, Scroll, Tv2, } from 'lucide-react';
 
 import { Link } from 'react-router-dom';
 
-import "../../src/assets/styles/mobileNavigation.scss"
-
 interface Props {
   title: string,
   }
