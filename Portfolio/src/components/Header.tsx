@@ -35,21 +35,21 @@ export default ({title}:Props) => {
   }
 
   return (
-    <header className="flex place-content-between bg-white px-4 content-center text-center place-items-center h-10 shadow-header xl:h-12 xl:px-6 2xl:px-24">
+    <header className="flex place-content-between bg-white px-4 content-center text-center place-items-center h-12 shadow-header xl:h-16 xl:px-6 2xl:px-24">
       <Link to='/' onClick={selectHome}><h1 className='text-2xl font-medium xl:text-3xl'>{title}</h1></Link>
       <div className='hidden sm:flex xl:text-xl'>
         <ul>
           {active === 'About me' ?
-            <li className='inline'><Link className='p-2 border-b-4 border-orange-peel' to='/about'>About me</Link></li> :
-            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/about' onClick={selectAbout}>About me</Link></li>}
+            <li className='inline'><Link className='p-3 xl:p-4 border-b-4 border-orange-peel' to='/about'>About me</Link></li> :
+            <li className='inline'><Link className='p-3 xl:p-4 hover:border-b-4 border-caribbean-current' to='/about' onClick={selectAbout}>About me</Link></li>}
 
           {active === 'Learning Adventure' ?
-            <li className='inline'><Link className='p-2 border-b-4 border-orange-peel' to='/learning'>Learning Adventure</Link></li> :
-            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/learning' onClick={selectLearning}>Learning Adventure</Link></li>}
+            <li className='inline'><Link className='p-3 xl:p-4 border-b-4 border-orange-peel' to='/learning'>Learning Adventure</Link></li> :
+            <li className='inline'><Link className='p-3 xl:p-4 hover:border-b-4 border-caribbean-current' to='/learning' onClick={selectLearning}>Learning Adventure</Link></li>}
           
           {active === 'Projects' ?
-            <li className='inline'><Link className='p-2 border-b-4 border-orange-peel' to='/projects'>Projects</Link></li> :
-            <li className='inline'><Link className='p-2 hover:border-b-4 border-caribbean-current' to='/projects' onClick={selectProjects}>Projects</Link></li>}
+            <li className='inline'><Link className='p-3 xl:p-4 border-b-4 border-orange-peel' to='/projects'>Projects</Link></li> :
+            <li className='inline'><Link className='p-3 xl:p-4 hover:border-b-4 border-caribbean-current' to='/projects' onClick={selectProjects}>Projects</Link></li>}
 
         </ul>
       </div>
