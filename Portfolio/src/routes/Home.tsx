@@ -18,9 +18,7 @@ function Home() {
       <Title title="Welcome"/>
 
       <p className='text-center text-sm px-4 pb-4 max-w-lg m-auto xl:text-base xl:max-w-xl xl:pb-6 2xl:text-xl 2xl:max-w-2xl 2xl:pb-8'>
-        Welcome to my online portfolio. Below you can find my online Curriculum Vitae.
-        In the menu you can choose to read more about my hard and soft skills,
-        discover my learning adventure or have a look at some of my projects
+        Hey, I am Tibo Messiaen, a full stack web & app developer from Belgium. I am currently studying at Howest in Kortrijk, Belgium. I am a hard working person and I am always willing to learn new things.
       </p>
 
       <a href={cv} target="_blank" className='flex place-items-center place-content-center bg-caribbean-current w-fit m-auto text-white rounded mb-16 hover:text-orange-peel'>
@@ -86,7 +84,7 @@ function Home() {
             </div>
 
         </div>
-        <div className='bg-white p-12 m-auto mb-16 xl:inline-block max-w-lg xl:h-200  xl:max-w-3xl xl:flex xl:flex-start'>
+        <div className='bg-white relative overflow-hidden p-12 m-auto mb-16 max-w-lg xl:h-200 xl:max-w-3xl xl:flex xl:flex-start'>
           <div className='inline-block xl:mr-12'>
             <h2 className='text-2xl text-center font-bold mb-6'>Education</h2>
 
@@ -115,6 +113,10 @@ function Home() {
               <li>App developer</li>
               <li>Desktop applications</li>
             </ol>
+
+          </div>
+
+          <div className='invisible xl:visible absolute bg-caribbean-current h-48 w-200 -rotate-45 bottom-0'>
 
           </div>
 

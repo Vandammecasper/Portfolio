@@ -21,11 +21,16 @@ module.exports = {
       },
       spacing: {
         '22' : '5.5rem',
+        '100': '25rem',
         '128': '32rem',
         '144': '36rem',
         '160': '40rem',
         '192': '48rem',
         '200': '50rem',
+        '250': '62.5rem',
+        '300': '75rem',
+        '400': '100rem',
+        '500': '125rem',
       },
       boxShadow: {
         'header': '0 3px 6px 0 #dadbe0;',
