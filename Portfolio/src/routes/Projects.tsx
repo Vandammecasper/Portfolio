@@ -21,7 +21,7 @@ function Projects() {
 
         <div className='flex flex-col md:flex-row md:gap-8'>
             <div className='w-full pb-4 md:w-1/2 xl:p-12'>
-              <img src="https://raw.githubusercontent.com/MessiaenTibo/Portfolio/blob/main/Portfolio/src/assets/imgs/PortfolioMockup.png" alt="placeholder" className='w-full'/>
+              <img src="https://raw.githubusercontent.com/MessiaenTibo/Portfolio/main/Portfolio/src/assets/imgs/PortfolioMockup.png?token=GHSAT0AAAAAAB6KNWW2IAOR5BVKTGRH3CJGZCAGOFA" alt="placeholder" className='w-full'/>
             </div>
             <div className='w-full pb-12 md:w-1/2 place-self-center xl:p-12'>
               <ProjectInfo title="Portfolio" paragraph="I created my own website portfolio" technologies={[{title:"Front-end", technologies:["HTML","Tailwindcss","Typescript"]}]} footnote="Website:" footnoteLink={<a href="https://tibomessiaen.netlify.app/" target='_blank'>Portfolio</a>}/>
